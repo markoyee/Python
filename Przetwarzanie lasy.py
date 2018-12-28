@@ -18,7 +18,7 @@ for obiekt in lista_plikow:
             #print (obiekt_zagniezdzony)
             #print(path_x+'\\'+obiekt_zagniezdzony)
             plik = open(path_x+'\\'+obiekt_zagniezdzony)
-            tekst = plik.getline(1)
+            tekst = plik.readline(30)
             print tekst
             plik.close()
 
