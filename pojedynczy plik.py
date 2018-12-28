@@ -12,12 +12,8 @@ mass_plik = open(mass, "a")
 for i in range(len(linie)):
     mass_plik.write(linie[i])
 
-#for i in range(len(linie)):
-#        print(linie[i][0], linie[i][-2])
-
 plik.close()
 mass_plik.close()
 
-            #print(lines[0], lines[-2]) #to ma byc zapisane
 
 print ('zakonczono' )
