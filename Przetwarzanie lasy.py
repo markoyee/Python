@@ -19,13 +19,12 @@ for obiekt in lista_plikow:
         if obiekt_zagniezdzony.endswith('species.txt'):
             plik = open(path_x+'\\'+obiekt_zagniezdzony)
 
-            linie = [linia.split('\t')[0]+" "+linia.split('\t')[-2]+"\n" for linia in plik]
+            linie = [linia.split('\t')[0]+"\t"+linia.split('\t')[-2]+"\n" for linia in plik]
             for i in range(len(linie)):
                         mass_plik.write(linie[i])
-
-
+                        print(i)
             plik.close()
-            print(obiekt_zagniezdzony)
+
 
 mass_plik.close()
 
