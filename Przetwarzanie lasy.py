@@ -19,13 +19,15 @@ for obiekt in lista_plikow:
         if obiekt_zagniezdzony.endswith('species.txt'):
             plik = open(path_x+'\\'+obiekt_zagniezdzony)
 
-            linie = [linia.split('\t')[0]+"\t"+linia.split('\t')[-2]+"\n" for linia in plik]
-            for i in range(len(linie)):
-                        mass_plik.write(linie[i])
-                        print(i)
-            plik.close()
+            linie = [linia.split('\t')[0]+"\t"+linia.split('\t')[-2]+"\n" for linia in plik if (linia.split('\t')[-2]!="") and (linia.split('\t')[0]!="arodes_int_num") ]
 
+            for i in range(len(linie)):
+
+                        mass_plik.write(linie[i])
+            plik.close()
 
 mass_plik.close()
 
 print ('zakonczono' )
+#brakuje nag?owkow trzeba dodac pojedyncza linie na koniec petli przed zamknieciem ostaniego pliku lub podczas rozpoczecia
+trzeba jeszcze dorobic kawalek z arcgisa
