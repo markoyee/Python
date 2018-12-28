@@ -18,7 +18,7 @@ for obiekt in lista_plikow:
         # warunek zeby wczytywac pliki o okreslonej nazwie
         if obiekt_zagniezdzony.endswith('species.txt'):
             plik = open(path_x+'\\'+obiekt_zagniezdzony)
-            tekst = plik.readline()
+            tekst = plik.read()
             mass_plik.write(tekst)
             plik.close()
             print(obiekt_zagniezdzony)
