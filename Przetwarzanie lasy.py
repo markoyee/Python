@@ -1,4 +1,4 @@
-#program do tworzenia jednego pliku tekstowego na bazie innych plikow tekstowych
+#program do tworzenia jednego pliku tekstowego na bazie innych plikow tekstowych w tym konkretnym przypadku z LMN
 import os
 
 print ('ustawiam sciezke dostepu do danych')
